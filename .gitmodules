@@ -1,0 +1,4 @@
+[submodule "apps/tethysapp-dam_inventory"]
+	path = apps/tethysapp-dam_inventory
+	url = https://github.com/tethysplatform/tethysapp-dam_inventory
+	branch = advanced-solution
