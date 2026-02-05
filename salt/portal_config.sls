@@ -3,7 +3,7 @@
 
 Move_Custom_Theme_Files_to_Static_Root:
   cmd.run:
-    - name: mv /tmp/custom_theme {{ STATIC_ROOT }}
+    - name: mv /images/portal-icon.png {{ STATIC_ROOT }}/tethys_portal
     - shell: /bin/bash
     - unless: /bin/bash -c "[ -f "{{ TETHYS_PERSIST }}/custom_theme_setup_complete" ];"
 
@@ -17,8 +17,7 @@ Apply_Custom_Theme:
         --primary-color "#01200F"
         --secondary-color "#358600"
         --background-color "#ffffff"
-        --brand-image "/custom_theme/images/portal-icon.png"
-        --favicon "/custom_theme/images/favicon.ico"
+        --brand-image "/tethys_portal/portal-icon.png"
         --copyright "Copyright © 2023 My Organization"
     - shell: /bin/bash
     - unless: /bin/bash -c "[ -f "{{ TETHYS_PERSIST }}/custom_theme_setup_complete" ];"

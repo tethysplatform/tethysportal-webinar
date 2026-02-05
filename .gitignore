@@ -1,2 +1,4 @@
 data
 logs
+
+docker compose logs -f tethys

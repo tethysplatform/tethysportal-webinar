@@ -9,7 +9,7 @@ ENV DAM_INVENTORY_MAX_DAMS="50"
 # COPY FILES #
 ###############
 COPY apps/tethysapp-dam_inventory ${TETHYS_HOME}/apps/tethysapp-dam_inventory
-COPY images/ /tmp/custom_theme/images/
+COPY images/ /images/
 
 ###########
 # INSTALL #
